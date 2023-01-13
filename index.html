@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>Etch-A-Sketch</h1>
+    <div class="header">
+        <h6>Selecione o tamanho</h6>
+        <button id="pop-up" class="btn btn-danger">Selecione</button>
+    </div>
+    <p id="message"></p>
+    <p id="draw"></p>
+    <div class="board"></div>
+    <div class="footer">
+        <button class="btn btn-dark" onclick="setColor('black')">Preto</button>
+        <button class="btn btn-warning" onclick="setColor('random')">Aleatório</button>
+        <button class="btn btn-primary" onclick="resetBoard()">Redefinir</button>
+    </div>
+</body>
+</html>
